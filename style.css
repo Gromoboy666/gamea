@@ -1,0 +1,156 @@
+body{
+  background-color:rgb(32, 32, 32)
+}
+p, h2 {
+  color: rgb(0, 0, 0);
+}
+div.hero {
+  text-align:center;
+  font-weight: bold;
+  font-size:16px;
+  border: 2px solid gray; 
+}
+div.hero-center {
+  border-right: 0px;
+  border-left:0px;
+}
+div.hero img {
+  width:200px;
+  height:200px;
+  background-color:rgb(255, 255, 255)
+}
+div.one, div.two, div.three{
+  background-color:rgb(255, 255, 255)
+}
+h1{
+  margin: 20px auto 50px auto;
+  color:rgb(255, 255, 255);
+  border-radius:50px;
+  width:50%;
+  border: 5px dashed white;
+  text-align: center;
+  padding: 5px 0px 10px 0px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: rgb(96, 111, 70);
+}
+h2 {
+  margin: 15px 0px 30px 0px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight:bold;
+  font-size:3em;
+  text-align:center;
+}
+
+p.describe {
+  margin-top: 40px;
+}
+#assasin{
+  margin-top: 20px;
+}
+div.hero button{
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  display:block;
+  width:230px;
+  height:50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin: 20px auto;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;        
+  }
+div.hero button{
+  background-color: rgb(143, 26, 26);
+  border: 1px solid rgb( 33, 126, 74 );
+}
+          
+div.hero button:hover{
+  background-color: rgb( 75, 183, 141 );
+}
+
+/************************* Фаза боя ***************************/
+.hide {
+  display:none;
+}
+div.block {
+  border: 2px solid gray;
+  background-color: rgb(255, 255, 255);
+}
+div.col-5 h3{
+  color:rgb(0, 0, 0);
+  font-size:2em;
+  padding-left:30px;
+  font-family: 'Oswald', sans-serif;
+  line-height: 2em;
+}
+div.fight img#my-hero{
+  float:right;
+  width:200px;
+  height:200px;
+  margin-right:50px;
+}
+
+/*стили для кнопок в бою*/
+
+button#next, button#atack, button#open{font-size:1.5em;width:100%;height:30%;font-weight: 700;color: white;text-decoration: none;padding: .8em 1em calc(.8em + 3px);border-radius: 30px;transition: 0.2s; margin-top:5%}
+
+/*Кнопка атаки*/
+button#atack {background: rgb(207, 59, 53); 
+  box-shadow: 0 -10px rgb(153, 41, 37) inset;}
+button#atack:hover {background: rgb(182, 49, 45);}
+
+/*Кнопка далее*/
+button#next {background: rgb(64,199,129);
+  box-shadow: 0 -10px rgb(45, 143, 94) inset; }
+button#next:hover { background: rgb(53, 167, 110); } 
+
+/*Кнопка открыть*/
+button#open {background: rgb(233, 140, 0);
+  box-shadow: 0 -10px #fa5900 inset; }
+button#open:hover { background:#e07f00; } 
+
+
+
+/******************* Message поле для сообщений************************/
+div.message p{
+  color:white;
+  font-size: 1.8em;
+  padding-top:10px;
+}
+div.message{
+  
+  text-align:center;
+  border-right:5px solid white;
+  border-bottom:5px solid white;
+  border-left:5px solid white;
+  box-sizing: border-box;
+  border-radius:0px 0px 20px 20px;
+  background-color: rgb(133, 96, 65);
+}
+
+div#divReward {
+  text-align:center;
+} 
+div#divReward img {
+  width:40%;
+  height:10%;
+  display:none; 
+}
+#reward {
+  font-size:2em;
+  margin-top:50px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+
+
