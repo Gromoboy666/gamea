@@ -14,75 +14,73 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="container">
-      <h1 id="head" style="text-align:center">Выберите героя</h1>
-      <div class="begin">
-        <div class="row">
-          <div class="col-4 hero one">
-            <h2>Чародей</h2>
-            <img  src="image/charer.png">
-            <p class="describe"> Получает + 60% к здоровью</p>
-            <button class="button-hero" value="Чародей">Выбрать</button>
-          </div>
-          <div class="col-4 hero hero-center two">  
-            <h2>Воин</h2>
-            <img src="image/Warrior.png">
-            <p class="describe"> Получает +3 к броне </p>
-            <button class="button-hero" value="Воин">Выбрать</button>
-          </div>
-          <div class="col-4 hero three">
-            <h2>Ассасин</h2>
-            <img style="height:220px" src="image/assasin.png">
-            <p id="assasin" class="describe"> Получает +5 к атаке </p>
-            <button class="button-hero" value="Ассасин">Выбрать</button>
-          </div>
+    <h1 id="head" style="text-align:center">Выберите героя</h1>
+    <div class="begin">
+      <div class="row">
+        <div class="col-4 hero one">
+          <h2>Чародей</h2>
+          <img  src="image/charer.png">
+          <p class="describe"> Получает + 60% к здоровью</p>
+          <button class="button-hero" value="Чародей">Выбрать</button>
         </div>
-      </div class="begin">
+        <div class="col-4 hero hero-center two">  
+          <h2>Воин</h2>
+          <img src="image/Warrior.png">
+          <p class="describe"> Получает +3 к броне </p>
+          <button class="button-hero" value="Воин">Выбрать</button>
+        </div>
+        <div class="col-4 hero three">
+          <h2>Ассасин</h2>
+          <img style="height:220px" src="image/assasin.png">
+          <p id="assasin" class="describe"> Получает +5 к атаке </p>
+          <button class="button-hero" value="Ассасин">Выбрать</button>
+        </div>
+      </div>
+    </div class="begin">
 
 <!------------------------Переход в фазу боя----------------------->
 
-      <div class="fight">
-        <div class="row">
-          <!--------------------- Первый блок ----------------->
-          <div id="left-block" class="col-5 hide block">
-            <h2>Мой герой</h2> 
-            <img id="my-hero">
-            <h3>Здоровье: <span id="myHealth">100</span></h3> 
-            <h3>Броня: <span id="myArmor">0</span></h3>
-            <h3>Атака: <span id="myAtack">5-10</span> </h3>
-            <h3 style= "text-align:center">Количество убийств: <span id="kills">0</span> </h3>
+    <div class="fight">
+      <div class="row">
+        <!--------------------- Первый блок ----------------->
+        <div id="left-block" class="col-5 hide block">
+          <h2>Мой герой</h2> 
+          <img id="my-hero">
+          <h3>Здоровье: <span id="myHealth">100</span></h3> 
+          <h3>Броня: <span id="myArmor">0</span></h3>
+          <h3>Атака: <span id="myAtack">5-10</span> </h3>
+          <h3 style= "text-align:center">Количество убийств: <span id="kills">0</span> </h3>
+        </div>
+
+        <!--------------------- Кнопки ----------------->
+
+        <div class='col-2'>
+          <button id="open" style="display: none;">Открыть</button>
+          <button id="atack" class="hide" >Атаковать</button>
+
+          <button id="next" class="hide" >Далее</button>
+        </div> 
+
+        <!--------------------- Второй блок ----------------->
+
+        <div id="right-block" class="col-5 hide block">
+          <h2 id="enemyName">Гоблин</h2> 
+          <!-- <h2 id="enemyName">Враг убит</h2> -->
+
+          <div id="divReward">
+            <img id="chest" src="image/closeChest.png">
+            <p id="reward"></p>
           </div>
 
-          <!--------------------- Кнопки ----------------->
-
-          <div class='col-2'>
-            <button id="open" style="display: none;">Открыть</button>
-            <button id="atack" class="hide" >Атаковать</button>
-        
-            <button id="next" class="hide" >Далее</button>
-          </div> 
-          
-          <!--------------------- Второй блок ----------------->
-
-          <div id="right-block" class="col-5 hide block">
-            <h2 id="enemyName">Гоблин</h2> 
-            <!-- <h2 id="enemyName">Враг убит</h2> -->
-            
-            <div id="divReward">
-              <img id="chest" src="image/closeChest.png">
-              <p id="reward"></p>
-            </div>
-
-            <h3><span id="enemyHealth">Здоровье: 20</span></h3> 
-            <h3><span id="enemyArmor">Броня: 0</span> </h3>
-            <h3><span id="enemyAtack">Атака: 5-10</span></h3>
-          </div>
-          <div class="container message">
-            <div class="row">
-              <div class="col-5"> <p><span id="messageAtackEnemy"></span></p></div>
-              <div class="col-2"> <p><span id="messageKill"></span></p></div>
-              <div class="col-5"><p><span id="messageAtack"></span></p></div>
-            </div>
+          <h3><span id="enemyHealth">Здоровье: 20</span></h3> 
+          <h3><span id="enemyArmor">Броня: 0</span> </h3>
+          <h3><span id="enemyAtack">Атака: 5-10</span></h3>
+        </div>
+        <div class="container message">
+          <div class="row">
+            <div class="col-5"> <p><span id="messageAtackEnemy"></span></p></div>
+            <div class="col-2"> <p><span id="messageKill"></span></p></div>
+            <div class="col-5"><p><span id="messageAtack"></span></p></div>
           </div>
         </div>
       </div>
