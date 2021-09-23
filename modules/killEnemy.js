@@ -12,7 +12,7 @@ function generateChest(){
   document.getElementById("enemyAtack").innerHTML = "";
   document.getElementById("enemyHealth").innerHTML = "";
   document.getElementById("enemyArmor").innerHTML = "";
-
+  document.getElementById("enemy-hero").style.display = "none";
   butAtack = document.getElementById("atack").onclick = null;
   butNext = document.getElementById("next").onclick =  null;
   butOpen = document.getElementById("open").onclick =  openChest;
@@ -24,10 +24,10 @@ function openChest(){
   animation.play();
   setTimeout(() => {
     document.getElementById("reward").style.display = "block";
-    play = generate(1,2);
+    play = generate(1,3);
     if (play == 1){
       document.getElementById("chest").src="image/openChest.png";
-      document.getElementById("reward").innerHTML = "Бонус к здоровью +5"}
+      document.getElementById("reward").innerHTML = generateBonus()}
     else if (play != 1 ) {
       document.getElementById("reward").innerHTML = "Сундук не открыт";}
     butNext = document.getElementById("next").onclick = nextEnemy;
